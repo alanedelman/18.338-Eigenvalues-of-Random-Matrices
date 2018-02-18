@@ -23,7 +23,7 @@ v = randn(t);  # randn - Generate a normally-distributed random number with mean
 # PLOT
 #  ------------ #
 # Install package with Pkg.add("Plots")
-Pkg.clone("https://github.com/plotly/Plotly.jl")
+# Pkg.clone("https://github.com/plotly/Plotly.jl")
 using Plotly
 plotly()
 
