@@ -9,17 +9,21 @@ THEORY      : The normal distribution curve
 =#
 
 #  ------------ #
+# PARAMETERS
+#  ------------ #
+t = 10000      # trials
+dx = .2        # binsize
+
+#  ------------ #
 # EXPERIMENT
 #  ------------ #
-t = 10000      #trials
-dx = .2        #binsize
-v = randn(t);  #randn - Generate a normally-distributed random number with mean 0 and standard deviation 1.
+v = randn(t);  # randn - Generate a normally-distributed random number with mean 0 and standard deviation 1.
 
 #  ------------ #
 # PLOT
 #  ------------ #
-# Install package with
-# Pkg.clone("https://github.com/plotly/Plotly.jl")
+# Install package with Pkg.add("Plots")
+Pkg.clone("https://github.com/plotly/Plotly.jl")
 using Plotly
 plotly()
 
